@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jujutsu Kaisen - Complete Sorcery Database</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Cinzel:wght@700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+    <!-- Background Video -->
+    <video id="background-video" autoplay muted loop>
+        <source src="hero_1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+    
+    <!-- Cursed Energy Particles -->
+    <div class="cursed-particles"></div>
+    
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Jujutsu<span>Kaisen</span></span>
+                <div class="cursed-energy"></div>
+            </div>
+            
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#characters" class="nav-link">Characters</a></li>
+                    <li><a href="#story" class="nav-link">Story</a></li>
+                    <li><a href="#author" class="nav-link">Author</a></li>
+                    <li><a href="#techniques" class="nav-link">Techniques</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video-container">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-purple-lightning-flashes-in-the-sky-35585-large.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-word title-word-1">Jujutsu</span>
+                <span class="title-word title-word-2">Kaisen</span>
+            </h1>
+            <h2 class="hero-subtitle">Sorcery Fight Database</h2>
+            <p class="hero-description">Enter the world of cursed energy, where jujutsu sorcerers battle against cursed spirits in an endless struggle between humanity and the supernatural.</p>
+            
+            <div class="hero-buttons">
+                <a href="#characters" class="cta-button pulse-animation">
+                    <span>All Characters</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <a href="#story" class="cta-button secondary">
+                    <span>Story Timeline</span>
+                    <i class="fas fa-scroll"></i>
+                </a>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- All Characters Section -->
+    <section id="characters" class="section">
+        <div class="container">
+            <h2 class="section-title">All Characters</h2>
+            <p class="section-subtitle">Tokyo & Kyoto Jujutsu High Sorcerers, Cursed Spirits, and More</p>
+            
+            <div class="character-filters">
+                <button class="filter-btn active" data-filter="all">All Characters</button>
+                <button class="filter-btn" data-filter="tokyo">Tokyo High</button>
+                <button class="filter-btn" data-filter="kyoto">Kyoto High</button>
+                <button class="filter-btn" data-filter="cursed">Cursed Spirits</button>
+                <button class="filter-btn" data-filter="special">Special Grade</button>
+            </div>
+            
+            <div class="characters-grid">
+                <!-- Tokyo Jujutsu High Students -->
+                <div class="character-card" data-category="tokyo special">
+                    <div class="character-image cursed-frame">
+                        <img src="https://wallpapercave.com/wp/wp14338655.jpg" alt="Yuji Itadori">
+                        <div class="cursed-energy-overlay"></div>
+                        <div class="character-overlay">
+                            <div class="cursed-level">
+                                <span class="level-label">Cursed Energy</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" data-level="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Yuji Itadori</h3>
+                        <p class="character-role">Vessel of Ryomen Sukuna</p>
+                        <p class="character-description">First-year student at Tokyo Jujutsu High who became the vessel of the King of Curses after eating Sukuna's finger.</p>
+                        <div class="character-abilities">
+                            <span class="ability-tag">Divergent Fist</span>
+                            <span class="ability-tag">Black Flash</span>
+                            <span class="ability-tag">Sukuna's Power</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="tokyo">
+                    <div class="character-image cursed-frame">
+                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/08/collage-maker-01-aug-2023-07-19-pm-2344.jpg" alt="Megumi Fushiguro">
+                        <div class="cursed-energy-overlay"></div>
+                        <div class="character-overlay">
+                            <div class="cursed-level">
+                                <span class="level-label">Cursed Energy</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" data-level="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Megumi Fushiguro</h3>
+                        <p class="character-role">Ten Shadows Technique User</p>
+                        <p class="character-description">First-year student and a descendant of the Zenin clan. Can summon shikigami through his inherited technique.</p>
+                        <div class="character-abilities">
+                            <span class="ability-tag">Ten Shadows</span>
+                            <span class="ability-tag">Domain Expansion</span>
+                            <span class="ability-tag">Shikigami</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="tokyo">
+                    <div class="character-image cursed-frame">
+                        <img src="https://animeonlineflix.com/wp-content/uploads/2024/07/Kugisaki-straw-doll-technique.webp" alt="Nobara Kugisaki">
+                        <div class="cursed-energy-overlay"></div>
+                        <div class="character-overlay">
+                            <div class="cursed-level">
+                                <span class="level-label">Cursed Energy</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" data-level="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Nobara Kugisaki</h3>
+                        <p class="character-role">Straw Doll Technique</p>
+                        <p class="character-description">First-year student who uses a hammer and nails imbued with cursed energy. Values her freedom and individuality.</p>
+                        <div class="character-abilities">
+                            <span class="ability-tag">Straw Doll</span>
+                            <span class="ability-tag">Resonance</span>
+                            <span class="ability-tag">Hairpin</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tokyo Teachers -->
+                <div class="character-card" data-category="tokyo special">
+                    <div class="character-image cursed-frame">
+                        <img src="https://swordslice.com/cdn/shop/articles/Jujutsu-Kaisen-Season-2-Gojo-Satoru-fighting-Toji-MAPPA.webp?v=1736953868&width=1200" alt="Satoru Gojo">
+                        <div class="cursed-energy-overlay"></div>
+                        <div class="character-overlay">
+                            <div class="cursed-level">
+                                <span class="level-label">Cursed Energy</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" data-level="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Satoru Gojo</h3>
+                        <p class="character-role">The Strongest Sorcerer</p>
+                        <p class="character-description">Special Grade jujutsu sorcerer and teacher at Tokyo Jujutsu High. Wields both the Six Eyes and Limitless techniques.</p>
+                        <div class="character-abilities">
+                            <span class="ability-tag">Limitless</span>
+                            <span class="ability-tag">Six Eyes</span>
+                            <span class="ability-tag">Domain Expansion</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kyoto Jujutsu High -->
+                <div class="character-card" data-category="kyoto">
+                    <div class="character-image cursed-frame">
+                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/12/aoi-todo.jpg" alt="Aoi Todo">
+                        <div class="cursed-energy-overlay"></div>
+                        <div class="character-overlay">
+                            <div class="cursed-level">
+                                <span class="level-label">Cursed Energy</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" data-level="88"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Aoi Todo</h3>
+                        <p class="character-role">Boogie Woogie User</p>
+                        <p class="character-description">Third-year student at Kyoto Jujutsu High with immense physical strength and the ability to swap positions with cursed energy.</p>
+                        <div class="character-abilities">
+                            <span class="ability-tag">Boogie Woogie</span>
+                            <span class="ability-tag">Black Flash</span>
+                            <span class="ability-tag">Enhanced Strength</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="kyoto">
+                    <div class="character-image cursed-frame">
+                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/07/image-2024-07-17t024207-863.jpg?q=49&fit=crop&w=825&dpr=2" alt="Mai Zenin">
+                        <div class="cursed-energy-overlay"></div>
+                        <div class="character-overlay">
+                            <div class="cursed-level">
+                                <span class="level-label">Cursed Energy</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" data-level="65"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Mai Zenin</h3>
+                        <p class="character-role">Construction Technique</p>
+                        <p class="character-description">Second-year student at Kyoto Jujutsu High and twin sister of Maki Zenin. Can create simple objects from cursed energy.</p>
+                        <div class="character-abilities">
+                            <span class="ability-tag">Construction</span>
+                            <span class="ability-tag">Marksmanship</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cursed Spirits -->
+                <div class="character-card" data-category="cursed special">
+                    <div class="character-image cursed-frame">
+                        <img src="https://motionbgs.com/media/6739/ryomen-sukuna-2.jpg" alt="Ryomen Sukuna">
+                        <div class="cursed-energy-overlay"></div>
+                        <div class="character-overlay">
+                            <div class="cursed-level">
+                                <span class="level-label">Cursed Energy</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" data-level="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Ryomen Sukuna</h3>
+                        <p class="character-role">King of Curses</p>
+                        <p class="character-description">The most powerful cursed spirit in history, existing as 20 indestructible fingers. Currently residing within Yuji Itadori.</p>
+                        <div class="character-abilities">
+                            <span class="ability-tag">Cleave & Dismantle</span>
+                            <span class="ability-tag">Fire Arrow</span>
+                            <span class="ability-tag">Domain Expansion</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="cursed special">
+                    <div class="character-image cursed-frame">
+                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/11/mahito-episode-42.jpg" alt="Mahito">
+                        <div class="cursed-energy-overlay"></div>
+                        <div class="character-overlay">
+                            <div class="cursed-level">
+                                <span class="level-label">Cursed Energy</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" data-level="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Mahito</h3>
+                        <p class="character-role">Cursed Spirit of Humanity</p>
+                        <p class="character-description">A special grade cursed spirit born from humanity's hatred and fear. Can manipulate souls and transform bodies.</p>
+                        <div class="character-abilities">
+                            <span class="ability-tag">Idle Transfiguration</span>
+                            <span class="ability-tag">Soul Manipulation</span>
+                            <span class="ability-tag">Domain Expansion</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Characters -->
+                <div class="character-card" data-category="tokyo">
+                    <div class="character-image cursed-frame">
+                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/01/maki-in-jujutsu-kaisen.jpg" alt="Maki Zenin">
+                        <div class="cursed-energy-overlay"></div>
+                        <div class="character-overlay">
+                            <div class="cursed-level">
+                                <span class="level-label">Physical Power</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" data-level="92"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Maki Zenin</h3>
+                        <p class="character-role">Heavenly Restriction User</p>
+                        <p class="character-description">Second-year student at Tokyo Jujutsu High with Heavenly Restriction granting superhuman physical abilities but no cursed energy.</p>
+                        <div class="character-abilities">
+                            <span class="ability-tag">Heavenly Restriction</span>
+                            <span class="ability-tag">Weapon Mastery</span>
+                            <span class="ability-tag">Enhanced Senses</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="tokyo">
+                    <div class="character-image cursed-frame">
+                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/05/pjimage-(18)-4.jpg" alt="Toge Inumaki">
+                        <div class="cursed-energy-overlay"></div>
+                        <div class="character-overlay">
+                            <div class="cursed-level">
+                                <span class="level-label">Cursed Energy</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" data-level="78"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Toge Inumaki</h3>
+                        <p class="character-role">Cursed Speech User</p>
+                        <p class="character-description">Second-year student who uses cursed speech to command opponents. Only speaks in rice ball ingredients to avoid accidental attacks.</p>
+                        <div class="character-abilities">
+                            <span class="ability-tag">Cursed Speech</span>
+                            <span class="ability-tag">Command Words</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="tokyo">
+                    <div class="character-image cursed-frame">
+                        <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/03/jujutsu-kaisen-panda.jpg" alt="Panda">
+                        <div class="cursed-energy-overlay"></div>
+                        <div class="character-overlay">
+                            <div class="cursed-level">
+                                <span class="level-label">Cursed Energy</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" data-level="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Panda</h3>
+                        <p class="character-role">Cursed Corpse</p>
+                        <p class="character-description">Second-year student who is actually a cursed corpse created by Principal Yaga. Has three cores representing different personalities.</p>
+                        <div class="character-abilities">
+                            <span class="ability-tag">Gorilla Mode</span>
+                            <span class="ability-tag">Core Switching</span>
+                            <span class="ability-tag">Enhanced Durability</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="kyoto">
+                    <div class="character-image cursed-frame">
+                        <img src="https://fwmedia.fandomwire.com/wp-content/uploads/2024/01/14061712/Blood-Manipulation-Technique.jpg" alt="Noritoshi Kamo">
+                        <div class="cursed-energy-overlay"></div>
+                        <div class="character-overlay">
+                            <div class="cursed-level">
+                                <span class="level-label">Cursed Energy</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" data-level="82"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Noritoshi Kamo</h3>
+                        <p class="character-role">Blood Manipulation</p>
+                        <p class="character-description">Second-year student at Kyoto Jujutsu High and a member of the Kamo clan. Uses the inherited Blood Manipulation technique.</p>
+                        <div class="character-abilities">
+                            <span class="ability-tag">Blood Manipulation</span>
+                            <span class="ability-tag">Flowing Red Scale</span>
+                            <span class="ability-tag">Piercing Blood</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="cursed">
+                    <div class="character-image cursed-frame">
+                        <img src="https://images5.alphacoders.com/114/thumb-1920-1143218.jpg" alt="Jogo">
+                        <div class="cursed-energy-overlay"></div>
+                        <div class="character-overlay">
+                            <div class="cursed-level">
+                                <span class="level-label">Cursed Energy</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" data-level="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Jogo</h3>
+                        <p class="character-role">Volcano Cursed Spirit</p>
+                        <p class="character-description">A special grade cursed spirit representing volcanic disasters. Extremely powerful and arrogant, seeking to create a world for cursed spirits.</p>
+                        <div class="character-abilities">
+                            <span class="ability-tag">Volcanic Attacks</span>
+                            <span class="ability-tag">Domain Expansion</span>
+                            <span class="ability-tag">Maximum Technique</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="character-card" data-category="cursed">
+                    <div class="character-image cursed-frame">
+                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/10/Jujutsu-Kaisen---PNG-Of-Hanami-Over-Image-Of-Hanami-Summoning-The-Cursed-Plants.jpg" alt="Hanami">
+                        <div class="cursed-energy-overlay"></div>
+                        <div class="character-overlay">
+                            <div class="cursed-level">
+                                <span class="level-label">Cursed Energy</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" data-level="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Hanami</h3>
+                        <p class="character-role">Forest Cursed Spirit</p>
+                        <p class="character-description">A special grade cursed spirit representing humanity's fear of forests and natural disasters. More contemplative than other curses.</p>
+                        <div class="character-abilities">
+                            <span class="ability-tag">Plant Manipulation</span>
+                            <span class="ability-tag">Seed Cannon</span>
+                            <span class="ability-tag">Domain Expansion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Enhanced Story Section -->
+    <section id="story" class="section dark-section">
+        <div class="container">
+            <h2 class="section-title">Story Timeline</h2>
+            <p class="section-subtitle">Key events in the battle between jujutsu sorcerers and cursed spirits</p>
+            
+            <div class="timeline-container">
+                <div class="timeline-line">
+                    <div class="timeline-progress"></div>
+                </div>
+                
+                <div class="story-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-circle">
+                            <div class="circle-content">
+                                <span class="timeline-date">Ep 1-2</span>
+                                <div class="circle-glow"></div>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">The Birth of a Vessel</h3>
+                            <p class="timeline-description">Yuji Itadori consumes Sukuna's finger to save his friends, becoming the vessel of the King of Curses. Satoru Gojo takes him to Tokyo Jujutsu High.</p>
+                            <div class="timeline-tags">
+                                <span class="timeline-tag">Introduction</span>
+                                <span class="timeline-tag">Sukuna's Finger</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-circle">
+                            <div class="circle-content">
+                                <span class="timeline-date">Ep 3-13</span>
+                                <div class="circle-glow"></div>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Cursed Womb Arc</h3>
+                            <p class="timeline-description">Yuji, Megumi, and Nobara face special grade curses in a detention center. Yuji executes his first Black Flash against a powerful cursed spirit.</p>
+                            <div class="timeline-tags">
+                                <span class="timeline-tag">Black Flash</span>
+                                <span class="timeline-tag">Special Grade</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-circle">
+                            <div class="circle-content">
+                                <span class="timeline-date">Ep 14-19</span>
+                                <div class="circle-glow"></div>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Cursed Training Arc</h3>
+                            <p class="timeline-description">Yuji undergoes intensive training to control cursed energy. The Kyoto sister school exchange event is announced, bringing new rivals.</p>
+                            <div class="timeline-tags">
+                                <span class="timeline-tag">Training</span>
+                                <span class="timeline-tag">Cursed Energy</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-circle">
+                            <div class="circle-content">
+                                <span class="timeline-date">Ep 20-24</span>
+                                <div class="circle-glow"></div>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Kyoto Sister School Event</h3>
+                            <p class="timeline-description">Tokyo and Kyoto Jujutsu High schools compete in team battles and individual matches. The cursed spirits plot their next move during the event.</p>
+                            <div class="timeline-tags">
+                                <span class="timeline-tag">Tournament</span>
+                                <span class="timeline-tag">Rival Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-circle">
+                            <div class="circle-content">
+                                <span class="timeline-date">Movie</span>
+                                <div class="circle-glow"></div>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Jujutsu Kaisen 0</h3>
+                            <p class="timeline-description">The prequel story follows Yuta Okkotsu, a student haunted by the curse of his childhood friend Rika, and his journey to become a jujutsu sorcerer.</p>
+                            <div class="timeline-tags">
+                                <span class="timeline-tag">Prequel</span>
+                                <span class="timeline-tag">Yuta Okkotsu</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-circle">
+                            <div class="circle-content">
+                                <span class="timeline-date">Season 2</span>
+                                <div class="circle-glow"></div>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Shibuya Incident Arc</h3>
+                            <p class="timeline-description">Cursed spirits launch a massive attack on Shibuya, trapping thousands of civilians. The jujutsu sorcerers face their greatest challenge yet.</p>
+                            <div class="timeline-tags">
+                                <span class="timeline-tag">Major Arc</span>
+                                <span class="timeline-tag">Shibuya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Author Section -->
+    <section id="author" class="section">
+        <div class="container">
+            <h2 class="section-title">The Creator</h2>
+            <p class="section-subtitle">Meet the mind behind Jujutsu Kaisen</p>
+            
+            <div class="author-container">
+                <div class="author-image">
+                    <div class="author-frame">
+                        <img src="" alt="Gege Akutami">
+                        <div class="author-glow"></div>
+                        <div class="author-energy"></div>
+                    </div>
+                </div>
+                
+                <div class="author-info">
+                    <h3 class="author-name">Gege Akutami</h3>
+                    <p class="author-title">Manga Author & Illustrator</p>
+                    
+                    <div class="author-details">
+                        <div class="detail-item">
+                            <i class="fas fa-birthday-cake"></i>
+                            <div>
+                                <h4>Birth Date</h4>
+                                <p>Unknown (Kept Private)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>From</h4>
+                                <p>Iwate Prefecture, Japan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <i class="fas fa-book"></i>
+                            <div>
+                                <h4>Serialization</h4>
+                                <p>Weekly Shōnen Jump (2018-Present)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Awards</h4>
+                                <p>2021 Tsutaya Comic Award, Manga Taisho Nominee</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="author-bio">
+                        <h4>About the Author</h4>
+                        <p>Gege Akutami is a pseudonymous manga artist best known for creating Jujutsu Kaisen. Very little is known about their personal life as they maintain strict privacy. Akutami previously worked as an assistant to Yasuhiro Kano on "Kiss x Death" before debuting with Jujutsu Kaisen in 2018.</p>
+                        <p>The series quickly gained popularity for its unique power system, complex characters, and blend of horror and action elements. Jujutsu Kaisen has become one of the most popular manga series worldwide, with over 80 million copies in circulation as of 2023.</p>
+                    </div>
+                    
+                    <div class="author-works">
+                        <h4>Other Works</h4>
+                        <div class="works-list">
+                            <span class="work-tag">No. 9 (One-shot)</span>
+                            <span class="work-tag">Jujutsu Kaisen 0 (Prequel)</span>
+                            <span class="work-tag">Tokyo Metropolitan Curse Technical School</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Techniques Section -->
+    <section id="techniques" class="section dark-section">
+        <div class="container">
+            <h2 class="section-title">Cursed Techniques</h2>
+            <p class="section-subtitle">Power systems and abilities in the Jujutsu Kaisen universe</p>
+            
+            <div class="techniques-container">
+                <div class="technique-card floating-animation">
+                    <div class="technique-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="technique-name">Cursed Energy</h3>
+                    <p class="technique-description">Negative emotions transformed into power. The source of all jujutsu techniques and what fuels cursed spirits.</p>
+                </div>
+                
+                <div class="technique-card floating-animation" style="animation-delay: 0.2s;">
+                    <div class="technique-icon">
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                    <h3 class="technique-name">Domain Expansion</h3>
+                    <p class="technique-description">A barrier technique that creates a pocket dimension imbued with the user's innate technique, guaranteeing a hit.</p>
+                </div>
+                
+                <div class="technique-card floating-animation" style="animation-delay: 0.4s;">
+                    <div class="technique-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="technique-name">Reverse Cursed Technique</h3>
+                    <p class="technique-description">Healing ability created by multiplying negative cursed energy, effectively reversing damage. Extremely rare.</p>
+                </div>
+                
+                <div class="technique-card floating-animation" style="animation-delay: 0.6s;">
+                    <div class="technique-icon">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <h3 class="technique-name">Black Flash</h3>
+                    <p class="technique-description">A distortion in space that occurs when cursed energy is applied within 0.000001 seconds of a physical hit.</p>
+                </div>
+            </div>
+            
+            <div class="power-system">
+                <h3 class="system-title">Power System Explained</h3>
+                <div class="system-grid">
+                    <div class="system-item">
+                        <h4>Grades</h4>
+                        <p>Sorcerers and curses are ranked from 4th grade (weakest) to Special grade (strongest). Special grade represents an anomaly that breaks conventional power scaling.</p>
+                    </div>
+                    <div class="system-item">
+                        <h4>Innate Techniques</h4>
+                        <p>Unique abilities inherited through bloodlines or developed naturally. Examples include the Ten Shadows Technique, Limitless, and Blood Manipulation.</p>
+                    </div>
+                    <div class="system-item">
+                        <h4>Barrier Techniques</h4>
+                        <p>Abilities that manipulate space, including simple domains, curtain barriers, and the ultimate barrier technique: Domain Expansion.</p>
+                    </div>
+                    <div class="system-item">
+                        <h4>Heavenly Restriction</h4>
+                        <p>A binding vow from birth that trades one attribute for another. Maki Zenin gained superhuman physical abilities in exchange for cursed energy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Jujutsu<span>Kaisen</span></span>
+                    <p class="footer-tagline">Sorcery Fight Database</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Explore</h4>
+                        <a href="#home">Home</a>
+                        <a href="#characters">Characters</a>
+                        <a href="#story">Story</a>
+                        <a href="#author">Author</a>
+                        <a href="#techniques">Techniques</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="#" target="_blank">Official Manga</a>
+                        <a href="#" target="_blank">Anime Website</a>
+                        <a href="#" target="_blank">Wiki</a>
+                        <a href="#" target="_blank">Merchandise</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Join the Community</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2025 Jujutsu Kaisen Fan Site. This is a fan-made website for educational purposes.</p>
+                <p>All rights belong to Gege Akutami, Shueisha, MAPPA, and associated parties.</p>
+            </div>
+        </div>
+    </footer>
+    
+   
+    <button id="scroll-top" class="scroll-top-button">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    
+    <div class="cursed-energy-effect"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
