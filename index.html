@@ -8,14 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Cinzel:wght@700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    
+    <!-- iOS specific meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="Jujutsu Kaisen">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="msapplication-navbutton-color" content="#0a0a0a">
 </head>
 <body>
-    <!-- Background Video -->
-    <video id="background-video" autoplay muted loop>
-        <source src="hero_1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="overlay"></div>
+    <!-- Background Video with iOS fixes -->
+    <div class="video-background">
+        <video id="background-video" playsinline autoplay muted loop preload="auto" webkit-playsinline>
+            <source src="hero_1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
     
     <!-- Cursed Energy Particles -->
     <div class="cursed-particles"></div>
@@ -46,14 +56,6 @@
     
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-video-container">
-            <video class="hero-video" autoplay muted loop playsinline>
-                <source src="https://assets.mixkit.co/videos/preview/mixkit-purple-lightning-flashes-in-the-sky-35585-large.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="hero-overlay"></div>
-        </div>
-        
         <div class="hero-content">
             <h1 class="hero-title">
                 <span class="title-word title-word-1">Jujutsu</span>
@@ -756,11 +758,9 @@
         </div>
     </footer>
     
-   
     <button id="scroll-top" class="scroll-top-button">
         <i class="fas fa-chevron-up"></i>
     </button>
-    
     
     <div class="cursed-energy-effect"></div>
     
