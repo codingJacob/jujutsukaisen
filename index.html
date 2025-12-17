@@ -1,42 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Jujutsu Kaisen - Complete Sorcery Database</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Cinzel:wght@700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
-     <!-- iOS specific meta tags -->
+    
+    <!-- Mobile specific fixes -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="format-detection" content="telephone=no">
-    
-    <!-- Prevent phone number detection -->
-    <meta name="format-detection" content="telephone=no">
-    
-    <!-- Add to homescreen for iOS -->
     <meta name="apple-mobile-web-app-title" content="Jujutsu Kaisen">
-    
-    <!-- Theme Color for Chrome, Firefox OS, Opera -->
     <meta name="theme-color" content="#0a0a0a">
-    
-    <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#0a0a0a">
-    
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#0a0a0a">
 </head>
 <body>
-    <!-- Background Video -->
-    <video id="background-video" playsinline autoplay muted loop preload="auto" poster="fallback-bg.jpg">
-        <source src="hero_1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="overlay"></div>
+    <!-- Background Video - Simplified -->
+    <div class="video-background">
+        <video id="background-video" playsinline autoplay muted loop preload="auto">
+            <source src="hero_1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
     
-    <!-- Cursed Energy Particles -->
+    <!-- Cursed Energy Particles (Disabled on mobile) -->
     <div class="cursed-particles"></div>
     
     <!-- Header -->
@@ -47,7 +39,7 @@
                 <div class="cursed-energy"></div>
             </div>
             
-            <button class="menu-toggle" id="menu-toggle">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
             
@@ -67,7 +59,7 @@
     <section id="home" class="hero">
         <div class="hero-video-container">
             <video class="hero-video" autoplay muted loop playsinline>
-                <source src="https://assets.mixkit.co/videos/preview/mixkit-purple-lightning-flashes-in-the-sky-35585-large.mp4" type="video/mp4">
+                <source src="hero_1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="hero-overlay"></div>
@@ -787,4 +779,5 @@
 </body>
 
 </html>
+
 
